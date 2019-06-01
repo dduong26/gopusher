@@ -20,4 +20,4 @@ gotrain = pd.DataFrame({
 })
 
 if __name__ == '__main__':
-    print(pb.push_note(gotrain))
+    print(gotrain)
