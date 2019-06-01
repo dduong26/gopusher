@@ -2,9 +2,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from pushbullet import Pushbullet
-
-pb = Pushbullet('o.g1deVydUzUfbRXyh7I29rFMI8YjXNqvT')
 
 page = requests.get('http://gotracker.ca/GOTracker/mobile/StationStatus/Service/01/Station/3')
 
