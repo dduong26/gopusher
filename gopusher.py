@@ -6,7 +6,6 @@ import pandas as pd
 page = requests.get('http://gotracker.ca/GOTracker/mobile/StationStatus/Service/01/Station/3')
 
 soup = BeautifulSoup(page.text, 'html.parser')
-#item = soup.find_all(True, {'class':['colTripDestination', 'colTripScheduled', 'colTripTrack', 'colTripExpected']})
 station = [station.get_text() for station in soup.find_all(class_='colTripDestination')]
 tripscheduled = [tripscheduled.get_text() for tripscheduled in soup.find_all(class_='colTripScheduled')]
 triptrack = [triptrack.get_text() for triptrack in soup.find_all(class_='colTripTrack')]
